@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Differencec equation plotter</title>
+    <link type="text/css" rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <header>
+        <ul class="tabla__header">
+            <li>
+                <figure >
+                    <img class="imagen" src="./UPTC.png" alt="Logo UPTC">
+                </figure>
+            </li>
+            <li>
+            </li>                 
+        </ul>    
+    </header>
+    <section> 
+        <ul> 
+            <li class="principal"> <h1 >Difference equation plotter</h1></li>
+        </ul>
+        <ul >
+            <li>
+                <p class="texto_instrucciones">El programa es capaz de graficar la siguiente ecuacion de diferencias</p>    
+                <p class="texto_instrucciones">y(z)= a.y(z).z^-2 + b.y(z).z^-1 + c.x(z).z^-2 + d.x(z).z^-1 + e.x(z)</p>    
+                <p class="texto_instrucciones">ingrese los parametros de la ecuacion de diferencias a graficar</p>    
+            </li>
+            <li>
+            </li>               
+        </ul>
+        
+        <ul class="l">        
+            <li>       
+                <p class="p__texto_sis" >Ingrese a
+                    <input class="text" type="number" id="input_a" value="-0.6887" required />
+                </p>
+            </li>
+            <li>       
+                <p class="p__texto_sis" >Ingrese b
+                    <input class="text" type="number" id="input_b" value="1.39" required/>
+                </p>
+            </li>
+            <li>       
+                <p class="p__texto_sis" >Ingrese c
+                    <input class="text" type="number" id="input_c" value="0.7119" required/>
+                </p>
+            </li>    
+        </ul>  
+        <ul class="l">        
+            <li>       
+                <p class="p__texto_sis" >Ingrese d
+                    <input class="text" type="number" id="input_d" value="1.424" required />
+                </p>
+            </li>
+            <li>       
+                <p class="p__texto_sis" >Ingrese e
+                    <input class="text" type="number" id="input_e" value="0.7119" required/>
+                </p>
+            </li>
+
+        </ul>  
+
+        <ul style="justify-content: center;">        
+            <li style= "justify-content: center;">
+                <p style="justify-content: center;">
+                    <input class="boton" type="submit" id="boton" value="Mostrar"/>
+                </p>
+            </li>      
+            <li style="text-align:-webkit-center ;">
+                <canvas class="canvas" width="480" height="400" id="dibujito"></canvas> 
+                <p id="resultado"></p>    
+            </li>
+
+        </ul>
+    </section>
+    <script src="./Diffeqplot.js"></script>
+    <footer class="footer">
+        <ul>
+            <li style="text-align:center ;">
+                Autores:
+            </li>
+            <li>
+                Oscar Humberto Sierra Herrera(1)(2)
+            </li>
+            <li>
+                Mario Eduardo Gonzalez Niño(2)(3)
+            </li>
+            <li>
+                Luis David Patarroyo Gutierrez (1)
+            </li>
+            <li style="text-align:center ;">
+                (1)Grupo de investigación I2E
+            </li>
+            <li style="text-align:center ;">
+                (2)Grupo de investigación DSP
+            </li>
+            <li style="text-align:center ;">
+                (3)Grupo de investigación GENTE
+            </li>
+            <li style="text-align:center">
+                2024
+            </li>
+        </ul>
+
+    </footer>
+
+
+</body>
+</html>
